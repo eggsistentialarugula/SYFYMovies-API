@@ -120,21 +120,21 @@ let syfyFilms = [
 
 // GET requests
 
-//log request to terminal
+//log requests to terminal
 app.use(morgan('common'));
+
+//route located at the endpoint "/movies"
+app.get('/movies', (req, res) => {
+    res.json(syfyFilms);
+  });
 
 //express route located at the endpoint "/"
 app.get('/', (req, res) => {
   res.send('Welcome to my Syfy Films database!');
 });
 
-//"documentation.html" from "/public" folder
+//serve "documentation.html" from "/public" folder
 app.use(express.static('public'));
-
-//route located at the endpoint "/movies"
-app.get('/movies', (req, res) => {
-  res.json(syfyFilms);
-});
 
 // error handling
 app.use((err, req, res, next) => {
