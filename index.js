@@ -15,77 +15,77 @@ let syfyFilms = [
         title: 'Sharknado',
         description: 'Sharknado is a 2013 American made-for-television sci-fi disaster film about a waterspout that lifts sharks out of the ocean and deposits them in Los Angeles. It is the first installment in the Sharknado film series.',
         director: 'Anthony C. Ferrante',
-        genres: 'Dark Comedy, Science Fiction',
+        genres: 'Dark Comedy',
         image: 'https://m.media-amazon.com/images/M/MV5BODcwZWFiNTEtNDgzMC00ZmE2LWExMzYtNzZhZDgzNDc5NDkyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg'
     },
     {
         title: 'Sharknado 2: The Second One',
         description: 'A sequel to the 2013 television film Sharknado and the second installment in the Sharknado film series.',
         director: 'Anthony C. Ferrante',
-        genres: 'Dark Comedy, Science Fiction',
+        genres: 'Dark Comedy',
         image: 'https://m.media-amazon.com/images/M/MV5BMjA0MTIxMDEwNF5BMl5BanBnXkFtZTgwMDk3ODIxMjE@._V1_UY1200_CR113,0,630,1200_AL_.jpg'
     },
     {
         title:'Sharknado 3: Oh Hell No!',
         description: 'The third installment in the Sharknado film series.',
         director:'Anthony C. Ferrante',
-        genres: 'Dark Comedy, Science Fiction',
+        genres: 'Dark Comedy',
         image: 'https://m.media-amazon.com/images/M/MV5BMTc5MDUzNzQzOF5BMl5BanBnXkFtZTgwMDg4NTYzNTE@._V1_.jpg'
     },
     {
         title: 'Sharktopus',
         description: 'Geneticist Nathan Sands and his daughter Nicole are hired by the U.S. Navy to create a new weapon; they create an intelligent shark that has the tentacles of an octopus, dubbed S-11, controlling the creature using electromagnetic pulses with a device attached to its head.',
         director: 'Declan O\'Brien',
-        genres: 'Dark Comedy, Science Fiction',
+        genres: 'Science Fiction',
         image: 'https://images-na.ssl-images-amazon.com/images/I/51tdFU8yZlL._AC_.jpg'
     },
     {
         title:'Sharktopus vs. Pteracuda',
         description: 'The sequel to the 2010 SyFy original monster film Sharktopus.',
         director:'Kevin O\'Neill',
-        genres:'Dark Comedy, Science Fiction',
+        genres:'Science Fiction',
         image: 'https://m.media-amazon.com/images/M/MV5BNDdkOTAwMTQtNGJlYS00YTY5LTk2OTgtNmMxZDk0OWJlMzFmXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_.jpg'
     },
     {
         title:'Sharktopus vs. Whalewolf',
         description: 'Since its fight with the Pteracuda, the Sharktopus is still at large and is lurking in the waters of the Dominican Republic. The third and final installment in the Sharktopus franchise, after Sharktopus (2010) and Sharktopus vs. Pteracuda (2014).',
         director:'Kevin O\'Neill',
-        genres: 'Dark Comedy, Science Fiction, Thriller',
+        genres: 'Thriller',
         image: 'https://m.media-amazon.com/images/M/MV5BMTg2OGU5ZTMtOWU3MS00ZDdmLWFmMjEtZjYwZWQyZWVlZmExXkEyXkFqcGdeQXVyNjM2NTM3ODA@._V1_.jpg'
     },
     {
         title:'Big Ass Spider!',
         description: 'The film tells the story of a bug exterminator, who, with the help of a hospital security guard and the military, battles a giant spider that goes on a rampage in Los Angeles.',
         director:'Mike Mendez',
-        genres:'Horror, Comedy, Science Fiction',
+        genres:'Horror',
         image: 'https://m.media-amazon.com/images/M/MV5BOTAzNTI3Nzg4Nl5BMl5BanBnXkFtZTcwMzU5MTgwOQ@@._V1_.jpg'
     },
     {
         title:'Mega Shark Versus Giant Octopus',
         description: 'The film is about the hunt for two prehistoric sea monsters causing mayhem and carnage at sea, and is the first installment in the Mega Shark series of films.',
         director:'Jack Perez',
-        genres: 'Horror, Science Fiction, Disaster',
+        genres: 'Disaster',
         image: 'https://m.media-amazon.com/images/M/MV5BNjc5OGY4YWMtNDZhZi00YjE1LTg0MzQtMmM4ODVmNjgwMjQ1XkEyXkFqcGdeQXVyOTYyMTM3OTU@._V1_.jpg'
     },
     {
         title:'Mega Shark Versus Crocosaurus',
         description: 'The film is a sequel to the 2009 film Mega Shark Versus Giant Octopus and is the second installment in the Mega Shark series of films, but contains little of the original cast from that film.',
         director:'Christopher Douglas-Olen Ray',
-        genres:'Horror, Science Fiction, Disaster',
+        genres:'Disaster',
         image: 'https://m.media-amazon.com/images/M/MV5BOTA2MmNjMjgtMTllZC00OGI0LTlhOGItZmE0ZmJmNDMzNWE1XkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_.jpg'
     },
     {
         title:'Mega Shark Versus Mecha Shark',
         description: 'The film is a sequel to Mega Shark Versus Giant Octopus and Mega Shark Versus Crocosaurus, and is the third installment in the Mega Shark film series.',
         director:'Emile Edwin Smith',
-        genres: 'Horror, Science Fiction, Disaster',
+        genres: 'Disaster',
         image: 'https://m.media-amazon.com/images/M/MV5BMTQzMDIyMjgxMF5BMl5BanBnXkFtZTgwODYzNjg4MDE@._V1_.jpg'
     },
     {
         title: 'Mega Shark Versus Kolossus',
         description: 'Some time after the events of the previous film, the world\'s governments institute preparation plans in case another Mega Shark appears; another shark is awakened by Russian miners drilling underwater for red mercury.',
         director: 'Christopher Douglas-Olen Ray',
-        genres:'Horror, Science Fiction, Disaster',
+        genres:'Disaster',
         image: 'https://images-na.ssl-images-amazon.com/images/I/91aKXO9TDLL._SL1500_.jpg'
     }
 ]
