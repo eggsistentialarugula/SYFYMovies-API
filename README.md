@@ -1,2 +1,2 @@
-# myFlix
+# SYFYMovies_API
  
