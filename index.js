@@ -12,9 +12,11 @@ const { check, validationResult } = require('express-validator');
 // call models from model.js
 const Movies = Models.Movie;
 const Users = Models.User;
-let allowedOrigins = ['http://localhost:8080', 'http://testsite.com'];
 
+// local database connection
 // mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true});
+
+// online database connection
 mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true});
 
 const app = express();
