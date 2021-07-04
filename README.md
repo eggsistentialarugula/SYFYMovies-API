@@ -1,8 +1,10 @@
 # SYFYMovies_API
- 
-# Objective
 
-Server-side component of a “movies” web application. The web application will provide users with access to information about different movies, directors, and genres. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+# Description
+
+A Restful API that allows users to make requests to a Syfy movies database and receive responses from the server-side. The endpoints are described in https://mysyfymovies.herokuapp.com/documentation.html
+
+The web application will give users access to information about different Syfy movies and the  directors and genres. Users will be able to sign up and create a list of their favorite movies. No demonstration avaialable yet. 
 
 # Essential Features
 
