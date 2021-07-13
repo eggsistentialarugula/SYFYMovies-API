@@ -1,26 +1,44 @@
-const express = require("express"),
-    bodyParser = require("body-parser");
-const morgan = require("morgan");
-const app = express();
-const mongoose = require("mongoose");
-const Models = require("./models.js");
+const express = require('express');
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+// const uuid = require('uuid');
+const Models = require('./models.js');
+const passport = require('passport');
+require('./passport');
+const cors = require('cors');
+const { check, validationResult } = require('express-validator');
+
+// call models from model.js
 const Movies = Models.Movie;
 const Users = Models.User;
 
-// mongoose.connect("mongodb://localhost:27017/mySyfyDB", { useNewUrlParser: true, useUnifiedTopology: true });
+// mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
 mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
+const app = express();
+
+let allowedOrigins = [
+    'http://locahost:8080',
+    'http://locahost:1234'
+];
+
+app.use(cors({
+    origin: (origin, callback) => {
+        if (!origin) return callback(null, true);
+        if (allowedOrigins.indexOf(origin) === -1) {
+            let message = 'The CORS policy for this application doesn’t allow access from origin ' + origin;
+            return callback(new Error(message), false);
+        }
+        return callback(null, true);
+    }
+}));
+
 app.use(bodyParser.json());
-app.use(morgan("common"));
-app.use(express.static("public"));
-
-const cors = require("cors");
-app.use(cors());
-
-const { check, validationResult } = require("express-validator");
-
-let auth = require("./auth")(app);
+let auth = require('./auth.js')(app);
+app.use(express.static('public'));
+app.use(morgan('common'));
 
 // GET requests
 
