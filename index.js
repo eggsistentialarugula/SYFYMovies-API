@@ -20,7 +20,6 @@ mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnified
 const app = express();
 
 let allowedOrigins = [
-    'http://locahost:8080',
     'http://localhost:1234'
 ];
 
