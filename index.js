@@ -21,7 +21,7 @@ const app = express();
 
 let allowedOrigins = [
     'http://locahost:8080',
-    'http://locahost:1234'
+    'http://localhost:1234'
 ];
 
 app.use(cors({
