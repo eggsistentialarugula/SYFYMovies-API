@@ -1,28 +1,27 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const uuid = require('uuid');
-const cors = require('cors');
 const morgan = require('morgan');
-const app = express();
-const { check, validationResult } = require('express-validator');
+const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+// const uuid = require('uuid');
 const Models = require('./models.js');
 const passport = require('passport');
 require('./passport');
+const cors = require('cors');
+const { check, validationResult } = require('express-validator');
 
-const movies = Models.Movie;
-const users = Models.User;
-const directors = Models.Director;
-const genres = Models.Genre;
+// call models from model.js
+const Movies = Models.Movie;
+const Users = Models.User;
 
 // mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+
 mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 
-app.use(morgan('common'));
-app.use(bodyParser.json());
-app.use(cors());
+const app = express();
 
-let auth = require('./auth.js')(app);
+let allowedOrigins = [
+    'http://localhost:1234'
+];
 
 app.use(cors({
     origin: (origin, callback) => {
