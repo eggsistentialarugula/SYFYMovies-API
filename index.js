@@ -7,7 +7,6 @@ app.use(bodyParser.json());
 let auth = require('./auth')(app);
 
 const cors = require('cors');
-app.use(cors());
 
 const passport = require('passport');
 require('./passport');
@@ -28,6 +27,7 @@ mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnified
 
 app.use(morgan('common'));
 app.use(express.static('public'));
+app.use(cors());
 
 // GET requests
 
