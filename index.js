@@ -4,12 +4,22 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 
+let auth = require('./auth')(app);
+
+const cors = require('cors');
+app.use(cors());
+
+const passport = require('passport');
+require('./passport');
+
+const { check, validationResult } = require('express-validator');
+
 const mongoose = require('mongoose');
 const Models = require('./models.js');
 
 // call models from model.js
 const Movies = Models.Movie;
-const Users = Models.User;
+const Users = Models.User
 
 // mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
 
@@ -18,16 +28,6 @@ mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnified
 
 app.use(morgan('common'));
 app.use(express.static('public'));
-
-const cors = require('cors');
-app.use(cors());
-
-const { check, validationResult } = require('express-validator');
-
-let auth = require('./auth')(app);
-
-const passport = require('passport');
-require('./passport');
 
 // GET requests
 
