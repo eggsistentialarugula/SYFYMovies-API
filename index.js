@@ -22,9 +22,10 @@ app.use(morgan('common'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+let auth = require('./auth')(app);
+
 // CORS
 app.use(cors());
-let auth = require('./auth')(app);
 
 const passport = require('passport');
 require('./passport');
