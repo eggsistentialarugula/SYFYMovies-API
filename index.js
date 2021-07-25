@@ -29,36 +29,6 @@ let auth = require('./auth')(app);
 const passport = require('passport');
 require('./passport');
 
-// const express = require('express'),
-//     morgan = require('morgan');
-// const bodyParser = require('body-parser');
-// const app = express();
-// app.use(bodyParser.json());
-
-// let auth = require('./auth')(app);
-
-// const passport = require('passport');
-// require('./passport');
-
-// const { check, validationResult } = require('express-validator');
-
-// const mongoose = require('mongoose');
-// const Models = require('./models.js');
-
-// // call models from model.js
-// const Movies = Models.Movie;
-// const Users = Models.User
-
-// // mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
-
-// // mongoDBatlas host
-// mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
-
-// app.use(morgan('common'));
-// app.use(express.static('public'));
-// const cors = require('cors');
-// app.use(cors());
-
 // GET requests
 
 app.get('/', (req, res) => {
@@ -66,7 +36,7 @@ app.get('/', (req, res) => {
 });
 
 //return list of all movies
-app.get('/movies', (req, res) => {
+app.get('/movies', passport.authenticate('jwt', { session: false }), (req, res) => {
     Movies.find().then((movies) => {
         res.status(201).json(movies);
     })
