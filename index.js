@@ -1,33 +1,34 @@
-const express = require('express'),
-    morgan = require('morgan');
-const bodyParser = require('body-parser');
+const express = require("express"),
+    bodyParser = require("body-parser");
+
+const morgan = require("morgan");
 const app = express();
-app.use(bodyParser.json());
+const mongoose = require("mongoose");
+const Models = require("./models.js");
 
-let auth = require('./auth')(app);
-
-const cors = require('cors');
-
-const passport = require('passport');
-require('./passport');
-
-const { check, validationResult } = require('express-validator');
-
-const mongoose = require('mongoose');
-const Models = require('./models.js');
-
-// call models from model.js
 const Movies = Models.Movie;
-const Users = Models.User
+const Users = Models.User;
 
-// mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+//mongoose.connect("mongodb://localhost:27017/mySyfyDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
-// mongoDBatlas host
-mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.CONNECTION_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
 
-app.use(morgan('common'));
-app.use(express.static('public'));
+app.use(bodyParser.json());
+app.use(morgan("common"));
+app.use(express.static("public"));
+
+const cors = require("cors");
 app.use(cors());
+
+const { check, validationResult } = require("express-validator");
+
+let auth = require("./auth")(app);
+
+const passport = require("passport");
+require("./passport");
 
 // GET requests
 
