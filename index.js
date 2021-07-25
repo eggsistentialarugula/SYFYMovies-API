@@ -1,32 +1,63 @@
+// Import necessary modules
 const express = require('express'),
-    morgan = require('morgan');
-const bodyParser = require('body-parser');
+    morgan = require('morgan'),
+    bodyParser = require('body-parser'),
+    uuid = require('uuid'),
+    cors = require('cors');
+
+const { check, validationResult } = require('express-validator');
+// Import DB models
+const mongoose = require('mongoose'),
+    Models = require('./models.js');
+const Movies = Models.Movie;
+const User = Models.User;
+
+// Connect to Mongoose DB
+mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+// express
 const app = express();
+
+app.use(morgan('common'));
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
+// CORS
+app.use(cors());
 let auth = require('./auth')(app);
 
 const passport = require('passport');
 require('./passport');
 
-const { check, validationResult } = require('express-validator');
+// const express = require('express'),
+//     morgan = require('morgan');
+// const bodyParser = require('body-parser');
+// const app = express();
+// app.use(bodyParser.json());
 
-const mongoose = require('mongoose');
-const Models = require('./models.js');
+// let auth = require('./auth')(app);
 
-// call models from model.js
-const Movies = Models.Movie;
-const Users = Models.User
+// const passport = require('passport');
+// require('./passport');
 
-// mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+// const { check, validationResult } = require('express-validator');
 
-// mongoDBatlas host
-mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+// const mongoose = require('mongoose');
+// const Models = require('./models.js');
 
-app.use(morgan('common'));
-app.use(express.static('public'));
-const cors = require('cors');
-app.use(cors());
+// // call models from model.js
+// const Movies = Models.Movie;
+// const Users = Models.User
+
+// // mongoose.connect('mongodb://localhost:27017/mySyfyDB', { useNewUrlParser: true, useUnifiedTopology: true });
+
+// // mongoDBatlas host
+// mongoose.connect(process.env.CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true });
+
+// app.use(morgan('common'));
+// app.use(express.static('public'));
+// const cors = require('cors');
+// app.use(cors());
 
 // GET requests
 
