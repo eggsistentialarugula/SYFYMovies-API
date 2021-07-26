@@ -1,8 +1,8 @@
-const jwt = require('jsonwebtoken');
-const passport = require('passport');
-require('./passport');
-
 const jwtSecret = 'my_secret';
+
+const jwt = require('jsonwebtoken'),
+    passport = require('passport');
+require('./passport');
 
 let generateJWTToken = (user) => {
     return jwt.sign(user, jwtSecret, {
