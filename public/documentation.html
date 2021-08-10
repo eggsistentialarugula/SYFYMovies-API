@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myFlix</title>
     <style>
-        *{
+        * {
             box-sizing: border-box;
         }
-        body{
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
-        header{
+
+        header {
             text-align: center;
         }
+
         /* Center tables for demo */
         table {
             margin: 0 auto;
@@ -28,6 +32,7 @@
             font-size: 16px;
             border-collapse: collapse;
         }
+
         table thead th,
         table th {
             background-color: #006e6e;
@@ -39,22 +44,26 @@
             padding: .5em;
             border: 1px solid rgb(0, 119, 109);
         }
-        tr:hover{
-            background-color:#a2ffdc;
+
+        tr:hover {
+            background-color: #a2ffdc;
         }
-        .red{
-            color:red;
+
+        .red {
+            color: red;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>myFlix Documentation</h1> 
+        <h1>myFlix Documentation</h1>
     </header>
     <main>
         <h2>Overview</h2>
         <p>
-            The myFlix API allows movie enthusiasts to read information about different movies. Users will be able to sign up, update their personal information, and create a list of their favorite movies.
+            The myFlix API allows movie enthusiasts to read information about different movies. Users will be able to
+            sign up, update their personal information, and create a list of their favorite movies.
         </p>
         <h2>Design Criteria</h2>
         <h3>User Stories</h3>
@@ -111,8 +120,8 @@
                 Allow users to create a “To Watch” list in addition to their “Favorite Movies” list
             </li>
         </ul>
-    
-        <h3 class ="centerText">Endpoints for REST API</h3>
+
+        <h3 class="centerText">Endpoints for REST API</h3>
         <table>
             <thead>
                 <tr>
@@ -142,62 +151,44 @@
                     <td>None</td>
                     <td>
                         A JSON object that holds data about about the single requested movie.
-                        <span class = "red">
+                        <span class="red">
                             <br>
                             Example: <br>
                             {<br>
-                                "Genre": {<br>
-                                    "Name": "Horror Comedy",<br>
-                                    "Description": "Comedy horror, also known as horror comedy, is a literary, television and film genre that combines elements of comedy and horror fiction. Comedy horror has been described as able to be categorized under three types: \"black comedy, parody and spoof.\" It often crosses over with the black comedy genre. Comedy horror can also parody or subtly spoof horror clichés as its main source of humour or use those elements to take a story in a different direction."<br>
-                                },<br>
-                                "Director": {<br>
-                                    "Name": "Anthony C. Ferrante",<br>
-                                    "Bio": "Anthony C. Ferrante is an American film director, producer, and writer, known for directing the Sharknado series, the 2017 thriller Forgotten Evil and the 2005 ghost story Boo, which was his feature film writing and directing debut.",<br>
-                                    "Birth": "July 30, 1969"<br>
-                                },<br>
-                                "Filmstars": [<br>
-                                    "Tara Reid",<br>
-                                    "Ian Ziering"<br>
-                                ],<br>
-                                "_id": "60d04003851bc02a9f47cb08",<br>
-                                "Title": "Sharknado",<br>
-                                "Description": "Sharknado is a 2013 American made-for-television sci-fi disaster film about a waterspout that lifts sharks out of the ocean and deposits them in Los Angeles. It is the first installment in the Sharknado film series.",<br>
-                                "ReleaseYear": 2013,<br>
-                                "IMDbRating": "3.3/10",<br>
-                                "Image": "https://m.media-amazon.com/images/M/MV5BODcwZWFiNTEtNDgzMC00ZmE2LWExMzYtNzZhZDgzNDc5NDkyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"<br>
+                            "Genre": {<br>
+                            "Name": "Horror Comedy",<br>
+                            "Description": "Comedy horror, also known as horror comedy, is a literary, television and
+                            film genre that combines elements of comedy and horror fiction. Comedy horror has been
+                            described as able to be categorized under three types: \"black comedy, parody and spoof.\"
+                            It often crosses over with the black comedy genre. Comedy horror can also parody or subtly
+                            spoof horror clichés as its main source of humour or use those elements to take a story in a
+                            different direction."<br>
+                            },<br>
+                            "Director": {<br>
+                            "Name": "Anthony C. Ferrante",<br>
+                            "Bio": "Anthony C. Ferrante is an American film director, producer, and writer, known for
+                            directing the Sharknado series, the 2017 thriller Forgotten Evil and the 2005 ghost story
+                            Boo, which was his feature film writing and directing debut.",<br>
+                            "Birth": "July 30, 1969"<br>
+                            },<br>
+                            "Filmstars": [<br>
+                            "Tara Reid",<br>
+                            "Ian Ziering"<br>
+                            ],<br>
+                            "_id": "60d04003851bc02a9f47cb08",<br>
+                            "Title": "Sharknado",<br>
+                            "Description": "Sharknado is a 2013 American made-for-television sci-fi disaster film about
+                            a waterspout that lifts sharks out of the ocean and deposits them in Los Angeles. It is the
+                            first installment in the Sharknado film series.",<br>
+                            "ReleaseYear": 2013,<br>
+                            "IMDbRating": "3.3/10",<br>
+                            "Image":
+                            "https://m.media-amazon.com/images/M/MV5BODcwZWFiNTEtNDgzMC00ZmE2LWExMzYtNzZhZDgzNDc5NDkyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg"<br>
                             }
                         </span>
-                        
+
                     </td>
                 </tr>
-
-                <!-- <tr>
-                    <td>Return data about a movie's rating</td>
-                    <td>/movies/[Rating]</td>
-                    <td>GET</td>
-                    <td>/movies/:rating</td>
-                    <td>None</td>
-                    <td>A JSON object that holds data about a movie's rating</td>
-                </tr> -->
-
-                <!-- <tr>
-                    <td>Return data about a movie's release year</td>
-                    <td>/movies/[ReleaseYear]</td>
-                    <td>GET</td>
-                    <td>/movies/:releaseYear</td>
-                    <td>None</td>
-                    <td>A JSON object that holds data about a movie's release year</td>
-                </tr> -->
-
-                <!-- <tr>
-                    <td>Return all data about all genres</td>
-                    <td>/genres</td>
-                    <td>GET</td>
-                    <td>None</td>
-                    <td>None</td>
-                    <td>A JSON object that holds data about all the genres.</td>
-                </tr> -->
-
                 <tr>
                     <td>Return data about a genre (description) by name/title (e.g., “Thriller”)</td>
                     <td>/Genre/[Name]</td>
@@ -205,27 +196,17 @@
                     <td>/Genre/:Name</td>
                     <td>None</td>
                     <td>
-                        A JSON object that has data about a specific genre. 
-                        <span class = "red">
+                        A JSON object that has data about a specific genre.
+                        <span class="red">
                             <br>
                             Example: <br>
                             {<br>
-                                "genre": "Disaster",<br>
-                                "description": "A disaster film or disaster movie..."<br>
+                            "genre": "Disaster",<br>
+                            "description": "A disaster film or disaster movie..."<br>
                             }<br>
                         </span>
                     </td>
                 </tr>
-
-                <!-- <tr>
-                    <td>Return all data about all directors.</td>
-                    <td>/directors</td>
-                    <td>GET</td>
-                    <td>None</td>
-                    <td>None</td>
-                    <td>A JSON object that has data about all the directors.</td>
-                </tr> -->
-
                 <tr>
                     <td>Return data about a director (bio, birth year, death year) by name</td>
                     <td>/directors/[Name]</td>
@@ -233,31 +214,31 @@
                     <td>/directors/:Name</td>
                     <td>None</td>
                     <td>
-                        A JSON object that has data about a movie's director. 
+                        A JSON object that has data about a movie's director.
                         <br>
-                        <span class = "red">
+                        <span class="red">
                             Example:<br>
                             {<br>
-                                "name": "Mike Mendez",<br>
-                                "biography": "Mike Mendez was in the backyard making movies...", <br>
-                                "birthday": "1973"<br>
+                            "name": "Mike Mendez",<br>
+                            "biography": "Mike Mendez was in the backyard making movies...", <br>
+                            "birthday": "1973"<br>
                             }<br>
                         </span>
 
                     </td>
                 </tr>
-
                 <tr>
-                    <td>Allow users to add a movie to their list of favorites (showing only a text that a movie has been added—more on this later)</td>
+                    <td>Allow users to add a movie to their list of favorites (showing only a text that a movie has been
+                        added—more on this later)</td>
                     <td>/users/[Username]/Movies/[movieID]</td>
                     <td>POST</td>
                     <td>/users/:Username/Movies/:MovieID</td>
                     <td>None</td>
                     <td>JSON Object that has data of the user and the user's favorite movies:<br>
                         <span class="red">
-                        {<br>
+                            {<br>
                             "FavoriteMovies": [<br>
-                                "60d04123851bc02a9f47cb11"<br>
+                            "60d04123851bc02a9f47cb11"<br>
                             ],<br>
                             "_id": "60d4287174b13474d850b3f8",<br>
                             "Username": "roflcopterlmao",<br>
@@ -265,30 +246,30 @@
                             "__v": 0,<br>
                             "Birthday": "1983-12-09T00:00:00.000Z",<br>
                             "Email": "roflcopter@gmail.com"<br>
-                        }<br>                            
+                            }<br>
                         </span>
                     </td>
                 </tr>
-
                 <tr>
                     <td>Allow users to remove a movie from their list of favorites</td>
                     <td>/users/[Username]/Movies[MovieID]</td>
                     <td>DELETE</td>
                     <td>/users/:Username/Movies/:MovieID</td>
                     <td>None</td>
-                    <td>A JSON Object showing data of the current user after removing a movie from their list of favorites
+                    <td>A JSON Object showing data of the current user after removing a movie from their list of
+                        favorites
                         <br>
                         <span class="red">
                             {<br>
-                                "FavoriteMovies": [<br>
-                                    "60d04074851bc02a9f47cb0c",<br>
-                                    "60d040c7851bc02a9f47cb0d"<br>
-                                ],<br>
-                                "Username": "scarface101",<br>
-                                "Password": "user2pwUPDATE",<br>
-                                "Email": "scarface101@yahoo.com",<br>
-                                "Birthday": "1983-12-09T00:00:00.000Z"<br>
-                            }<br>                             
+                            "FavoriteMovies": [<br>
+                            "60d04074851bc02a9f47cb0c",<br>
+                            "60d040c7851bc02a9f47cb0d"<br>
+                            ],<br>
+                            "Username": "scarface101",<br>
+                            "Password": "user2pwUPDATE",<br>
+                            "Email": "scarface101@yahoo.com",<br>
+                            "Birthday": "1983-12-09T00:00:00.000Z"<br>
+                            }<br>
                         </span>
 
                     </td>
@@ -302,27 +283,27 @@
                     <td>
                         A JSON object holding data about a user to register.
                         <br>
-                        <span class = "red">
+                        <span class="red">
                             {<br>
-                                "Username": "testing1234",<br>
-                                "Password": "testing1234pw",<br>
-                                "Email": "testing1234@yahoo.com",<br>
-                                "Birthday": "1983-12-09T00:00:00.000Z"<br>
+                            "Username": "testing1234",<br>
+                            "Password": "testing1234pw",<br>
+                            "Email": "testing1234@yahoo.com",<br>
+                            "Birthday": "1983-12-09T00:00:00.000Z"<br>
                             }<br>
                         </span>
 
                     </td>
                     <td>
                         A JSON object that shows data of the user that was just added.<br>
-                        <span class ="red">
+                        <span class="red">
                             {<br>
-                                "FavoriteMovies": [],<br>
-                                "_id": "60d5aabafe3aa838c0c49d08",<br>
-                                "Username": "testing1234",<br>
-                                "Password": "testing1234pw",<br>
-                                "Email": "testing1234@yahoo.com",<br>
-                                "Birthday": "1983-12-09T00:00:00.000Z",<br>
-                                "__v": 0<br>
+                            "FavoriteMovies": [],<br>
+                            "_id": "60d5aabafe3aa838c0c49d08",<br>
+                            "Username": "testing1234",<br>
+                            "Password": "testing1234pw",<br>
+                            "Email": "testing1234@yahoo.com",<br>
+                            "Birthday": "1983-12-09T00:00:00.000Z",<br>
+                            "__v": 0<br>
                             }<br>
                         </span>
                     </td>
@@ -334,32 +315,33 @@
                     <td>PUT</td>
                     <td>/users/:Username</td>
                     <td> A JSON object that has data about the user that is going to be updated.<br>
-                        <span class ="red">
+                        <span class="red">
                             {<br>
-                                "Username": "testing1234",<br>
-                                "Password": "testing1234pwUPDATEE",<br>
-                                "Email": "testing1234@yahoo.com",<br>
-                                "Birthday": "1983-12-09T00:00:00.000Z"<br>
+                            "Username": "testing1234",<br>
+                            "Password": "testing1234pwUPDATEE",<br>
+                            "Email": "testing1234@yahoo.com",<br>
+                            "Birthday": "1983-12-09T00:00:00.000Z"<br>
                             }<br>
                         </span>
                     </td>
                     <td>A JSON object showing data of the user that was just updated.<br>
                         <span class="red">
                             {<br>
-                                "FavoriteMovies": [],<br>
-                                "_id": "60d5aabafe3aa838c0c49d08",<br>
-                                "Username": "testing1234",<br>
-                                "Password": "testing1234pwUPDATEE",<br>
-                                "Email": "testing1234@yahoo.com",<br>
-                                "Birthday": "1983-12-09T00:00:00.000Z",<br>
-                                "__v": 0<br>
+                            "FavoriteMovies": [],<br>
+                            "_id": "60d5aabafe3aa838c0c49d08",<br>
+                            "Username": "testing1234",<br>
+                            "Password": "testing1234pwUPDATEE",<br>
+                            "Email": "testing1234@yahoo.com",<br>
+                            "Birthday": "1983-12-09T00:00:00.000Z",<br>
+                            "__v": 0<br>
                             }<br>
                         </span>
                     </td>
                 </tr>
 
                 <tr>
-                    <td>Allow existing users to deregister (showing only a text that a user email has been removed—more on this later)</td>
+                    <td>Allow existing users to deregister (showing only a text that a user email has been removed—more
+                        on this later)</td>
                     <td>/users/[Username]</td>
                     <td>DELETE</td>
                     <td>/users/:Username</td>
@@ -373,4 +355,5 @@
     </main>
 
 </body>
+
 </html>
