@@ -72,4 +72,5 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * uuid: 8.3.2
 
 <h2 id ="clients">Client Applications Using This API</h2>
+
 [mySyfy Movies](https://mysyfymovies.netlify.app/)
