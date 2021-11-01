@@ -31,7 +31,7 @@ This project is the server-side component for an application called "mySyfy Movi
 # Tech
 
 * A Node.js and Express application
-* TUses REST architecture, with URL endpoints corresponding to the data operations listed under [**Essential Features](#essential-features).
+* TUses REST architecture, with URL endpoints corresponding to the data operations listed under [Essential Features](#essential-features).
 * The API
 
 
