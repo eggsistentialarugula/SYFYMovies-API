@@ -1,6 +1,6 @@
 # SYFYMovies_API
 
-### "Table of Contents"
+### Quick Access
 
 [Overview](#overview) <br/>
 [Description](#description) <br/>
