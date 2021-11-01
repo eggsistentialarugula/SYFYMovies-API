@@ -24,13 +24,6 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Allow users to remove a movie from their list of favorites
 * Allow existing users to deregister
 
-# Built using:
-
-* Javascript
-* Node.js
-* Express
-* MongoDB
-* VS Code
 
 # Tech
 
@@ -46,6 +39,13 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Endpoints tested using Postman
 * API deployed to Heroku
 
+# Built using:
+
+* Javascript
+* Node.js
+* Express
+* MongoDB
+* VS Code
 
 # Dependencies
 
