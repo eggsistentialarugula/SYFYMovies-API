@@ -1,9 +1,9 @@
 # SYFYMovies_API
 
 ### "Table of Contents"
-<ol>
-    <li>[Overview](#overview)</li>
-</ol>
+
+[Overview](#overview)</li>
+
 
 <h2 id = "overview">Overview</h2> 
 
