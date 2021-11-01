@@ -2,10 +2,10 @@
 
 ### "Table of Contents"
 <ol>
-    <li>Overview</li>
+    <li>[Overview](#overview)</li>
 </ol>
 
-<h2>Overview</h2> 
+<h2 id = "overview">Overview</h2> 
 
 A Restful API that allows users to make requests to a Syfy movies database and receive responses from the server-side. The endpoints are described in https://mysyfymovies.herokuapp.com/documentation.html
 
