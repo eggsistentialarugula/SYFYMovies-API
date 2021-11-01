@@ -6,7 +6,11 @@ A Restful API that allows users to make requests to a Syfy movies database and r
 
 # Description
 
-This project is the server-side component for an application called "mySyfy Movies" that stores data about movies. It consists of a well-designed REST API and architected database built using _**Javascript**_, _**Node.js**_, _**Express**_, and _**MongoDB**_. It is used by the mySyfy Movies client-side to give users access to information about different Syfy movies and the  directors and genres. Users will be able to sign up and create a list of their favorite movies. 
+This project is the server-side component for an application called "mySyfy Movies" that stores data about movies. It consists of a well-designed REST API and architected database built using _**Javascript**_, _**Node.js**_, _**Express**_, and _**MongoDB**_. 
+
+The _**REST API**_ is hosted on _**Heroku**_ and accessed via commonly used HTTP methods like GET and POST. Similar methods (CRUD) will be used to retrieve data from the database and store that data in a non-relational way.
+
+It is used by the mySyfy Movies client-side to give users access to information about different Syfy movies and the  directors and genres. Users will be able to sign up and create a list of their favorite movies. 
 
 <h1 id = "essential-features">Essential Features</h1>
 
@@ -32,7 +36,12 @@ This project is the server-side component for an application called "mySyfy Movi
 
 * A Node.js and Express application
 * TUses REST architecture, with URL endpoints corresponding to the data operations listed under [Essential Features](#essential-features).
-* The API
+* The API uses middleware modules, such as the body-parser package for reading data from requests and morgan for logging.
+* Database built using MongoDB
+* Business logic was modeled with Mongoose
+*  API endpoints were tested using Postman
+* Includes user authenticaion and authorization code
+* Includes data validation logic
 
 
 # Dependencies
