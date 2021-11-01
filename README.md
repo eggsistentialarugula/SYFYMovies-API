@@ -4,9 +4,11 @@
 
 [Overview](#overview) <br/>
 [Description](#description) <br/>
-[Tech](#text) <br/>
+[Tech](#tech) <br/>
 [Tools used](#built) <br/>
-[Dependencies](#Dependencies)
+[Dependencies](#Dependencies) <br/>
+[Client Apps Using this API](#clients)
+
 
 <h2 id = "overview">Overview</h2> 
 
@@ -68,3 +70,6 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * passport-jwt: 4.0.0
 * passport-local: 1.0.0
 * uuid: 8.3.2
+
+<h2 id ="clients">Client Applications Using This API</h2>
+[mySyfy Movies](https://mysyfymovies.netlify.app/)
