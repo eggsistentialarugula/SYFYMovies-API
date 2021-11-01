@@ -1,4 +1,4 @@
-# SYFYMovies_API
+# SYFYMovies API
 
 ### Quick Access
 
