@@ -39,9 +39,12 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * The API uses middleware modules, such as the body-parser package for reading data from requests and morgan for logging.
 * Database built using MongoDB
 * Business logic was modeled with Mongoose
-*  API endpoints were tested using Postman
+* API provides movie information in JSON format
+* API endpoints were tested using Postman
 * Includes user authenticaion and authorization code
 * Includes data validation logic
+* Endpoints tested using Postman
+* API deployed to Heroku
 
 
 # Dependencies
