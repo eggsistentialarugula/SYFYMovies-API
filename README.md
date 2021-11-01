@@ -8,7 +8,7 @@ A Restful API that allows users to make requests to a Syfy movies database and r
 
 This project is the server-side component for an application called "mySyfy Movies" that stores data about movies. It consists of a well-designed REST API and architected database built using _**Javascript**_, _**Node.js**_, _**Express**_, and _**MongoDB**_. It is used by the mySyfy Movies client-side to give users access to information about different Syfy movies and the  directors and genres. Users will be able to sign up and create a list of their favorite movies. 
 
-<h4 id = "essential-features">Essential Features</h4>
+<h1 id = "essential-features">Essential Features</h1>
 
 * Return a list of ALL movies to the user
 * Return data (description, genre, director, image URL, whether it’s featured or not) about a * * * single movie by title to the user
