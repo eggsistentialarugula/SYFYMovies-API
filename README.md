@@ -2,11 +2,11 @@
 
 ### Table of Contents
 
-# Overview
+## Overview
 
 A Restful API that allows users to make requests to a Syfy movies database and receive responses from the server-side. The endpoints are described in https://mysyfymovies.herokuapp.com/documentation.html
 
-# Description
+## Description
 
 This project is the server-side component for an application called "mySyfy Movies" that stores data about movies. It consists of a well-designed REST API and architected database built using _**Javascript**_, _**Node.js**_, _**Express**_, and _**MongoDB**_. 
 
@@ -27,7 +27,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Allow existing users to deregister
 
 
-# Tech
+## Tech
 
 * A Node.js and Express application
 * TUses REST architecture, with URL endpoints corresponding to the data operations listed under [Essential Features](#essential-features).
@@ -41,7 +41,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Endpoints tested using Postman
 * API deployed to Heroku
 
-# Built using:
+## Built using:
 
 * Javascript
 * Node.js
@@ -49,7 +49,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * MongoDB
 * VS Code
 
-# Dependencies
+## Dependencies
 
 * bcrypt: 5.0.1
 * body-parser: 1.19.0
