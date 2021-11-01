@@ -2,7 +2,7 @@
 
 ### "Table of Contents"
 
-[Overview](#overview)</li>
+[Overview](#overview)
 
 
 <h2 id = "overview">Overview</h2> 
