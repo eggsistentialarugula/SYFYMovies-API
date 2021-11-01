@@ -10,11 +10,11 @@
 [Client Apps Using this API](#clients)
 
 
-<h2 id = "overview">Overview</h2> 
+<h3 id = "overview">Overview</h3> 
 
 A Restful API that allows users to make requests to a Syfy movies database and receive responses from the server-side. The endpoints are described in https://mysyfymovies.herokuapp.com/documentation.html
 
-<h2 id = "description">Description</h2>
+<h3 id = "description">Description</h3>
 
 This project is the server-side component for an application called "mySyfy Movies" that stores data about movies. It consists of a well-designed REST API and architected database built using _**Javascript**_, _**Node.js**_, _**Express**_, and _**MongoDB**_. 
 
@@ -22,7 +22,7 @@ The _**REST API**_ is hosted on _**Heroku**_ and accessed via commonly used HTTP
 
 It is used by the mySyfy Movies client-side to give users access to information about different Syfy movies and the  directors and genres. Users will be able to sign up and create a list of their favorite movies. 
 
-<h2 id = "essential-features">Essential Features</h2>
+<h3 id = "essential-features">Essential Features</h3>
 
 * Return a list of ALL movies to the user
 * Return data (description, genre, director, image URL, whether it’s featured or not) about a * * * single movie by title to the user
@@ -34,7 +34,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Allow users to remove a movie from their list of favorites
 * Allow existing users to deregister
 
-<h2 id ="tech">Tech</h2>
+<h3 id ="tech">Tech</h3>
 
 * A Node.js and Express application
 * TUses REST architecture, with URL endpoints corresponding to the data operations listed under [Essential Features](#essential-features).
@@ -48,7 +48,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * Endpoints tested using Postman
 * API deployed to Heroku
 
-<h2 id = "built">Built Using:</h2>
+<h3 id = "built">Built Using:</h3>
 
 * Javascript
 * Node.js
@@ -56,7 +56,7 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * MongoDB
 * VS Code
 
-<h2 id = "dependencies">Dependencies</h2>
+<h3 id = "dependencies">Dependencies</h3>
 
 * bcrypt: 5.0.1
 * body-parser: 1.19.0
@@ -71,6 +71,6 @@ It is used by the mySyfy Movies client-side to give users access to information 
 * passport-local: 1.0.0
 * uuid: 8.3.2
 
-<h2 id ="clients">Client Applications Using This API</h2>
+<h3 id ="clients">Client Applications Using This API</h3>
 
 [mySyfy Movies](https://mysyfymovies.netlify.app/)
